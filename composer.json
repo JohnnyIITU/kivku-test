@@ -1,0 +1,23 @@
+{
+    "name": "johnny/kviku",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Johnny\\Kviku\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zhanibek Azhimov",
+            "email": "primejohnny98@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.10"
+        }
+    }
+}
