@@ -5,7 +5,6 @@ namespace Johnny\Kviku\Services;
 use GuzzleHttp\Exception\GuzzleException;
 use Johnny\Kviku\Clients\KvikuClient;
 use Johnny\Kviku\Dtos\CreditDto;
-use Johnny\Kviku\Helpers\EnvironmentHelper;
 use Johnny\Kviku\Values\CreditInfoValue;
 use Johnny\Kviku\Values\UserValue;
 use Psr\Http\Message\ResponseInterface;
@@ -16,7 +15,7 @@ class KvikuService
     private KvikuClient $kvikuClient;
     public function __construct()
     {
-        $this->kvikuClient = new KvikuClient(getenv('KVIKU_TOKEN'), getenv('KIVKU_URL'));
+        $this->kvikuClient = new KvikuClient(getenv('KVIKU_TOKEN'), getenv('KVIKU_HOST'));
     }
 
     /**
